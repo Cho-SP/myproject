@@ -1,0 +1,217 @@
+<!doctype html>
+<html>
+
+<body>
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400" rel="stylesheet">
+  <link rel="stylesheet" href="fontello-bcf36fd2/css/fontello.css">
+  <style>
+    body {
+      background-image: url(images/bg.jpg);
+      background-size: cover;
+      min-height: 100vh;
+      font-family: 'Source Sans Pro', sans-serif;
+    }
+    #header{
+      margin-top:2rem;
+      text-align: center;
+    }
+    #header .avatar {
+      border: 1px solid rgba(255, 255, 255, 0.28);
+      border-radius: 100%;
+      display: inline-block;
+      padding: 0.2rem;
+    }
+    
+    #header img {
+      border-radius: 100%;
+      display: block;
+    }
+    #header h1{
+      margin-top:2rem;
+    }
+    #header h1,
+    #header h1 a {
+      color: rgba(255, 255, 255, 0.62);
+      font-weight: 200;
+      font-size: 1.2rem;
+    }
+    
+    #header h1 a {
+      text-decoration: none;
+      border-bottom: 1px dotted rgba(255, 255, 255, 0.62);
+    }
+    
+    #header .icons {
+      list-style: none;
+      margin-top:2rem;
+    }
+    
+    #header .icons li {
+      display: inline-block;
+      border: 1px solid rgba(255, 255, 255, 0.54);
+      border-radius: 100%;
+      background-color: rgba(255, 255, 255, 0.1);
+    }
+    
+    #header .icons a {
+      text-decoration: none;
+      color: rgba(255, 255, 255, 0.59);
+      display: inline-block;
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0.8rem;
+    }
+    #header .icons a:hover{
+      color: rgba(255, 255, 255, 0.8);
+    }
+    
+    #header .icons a:before {
+      margin: 0;
+      font-size:1.5rem;
+    }
+    
+    #header .icons .label {
+      display: none;
+    }
+    
+    * {
+      box-sizing: border-box;
+    }
+    
+    #main {
+      max-width: 67rem;
+      margin:0 auto;
+      margin-top:2rem;
+    }
+    
+    #main .thumbnails {
+      display: flex;
+    }
+    
+    #main .thumbnails div {
+      width: 100%;
+      margin: 0 0.3rem;
+    }
+    
+    #main .thumbnails a {
+      display: inline-block;
+      width: 100%;
+      margin: 0.6rem 0;
+    }
+    
+    #main .thumbnails img {
+      width: 100%;
+      display: block;
+      border: 1px solid rgba(255, 255, 255, 0.21);
+      border-bottom: none;
+      border-top-left-radius: 6px;
+      border-top-right-radius: 6px;
+    }
+    
+    #main .thumbnails a {
+      text-decoration: none;
+    }
+    
+    #main .thumbnails h3 {
+      margin: 0;
+      font-size: 0.8rem;
+      font-weight: 200;
+      color: rgba(255, 255, 255, 0.82);
+      padding: 1rem;
+      background-color: rgba(255, 255, 255, 0.13);
+      border: 1px solid rgba(255, 255, 255, 0.21);
+      border-top: none;
+      border-bottom-left-radius: 6px;
+      border-bottom-right-radius: 6px;
+    }
+    
+    #footer {
+      text-align: center;
+      margin-top:3rem;
+    }
+    
+    #footer:before {
+      content: '';
+      border-bottom: 1px solid white;
+      width: 7rem;
+      display: block;
+      margin: 2rem auto;
+    }
+    
+    #footer,
+    #footer a {
+      color: rgba(255, 255, 255, 0.78);
+      font-weight: 200;
+      font-size: 1rem;
+    }
+    #wrapper{
+      padding:2rem;
+    }
+    @media (max-width:800px){
+      #main .thumbnails{
+        flex-direction: column;
+      }
+      #main .thumbnails h3{
+        font-size:1.3rem;
+        padding:1.3rem;
+      }
+    }
+  </style>
+  <div id="wrapper">
+    <header id="header">
+      <span class="avatar">
+          <img src="images/avatar.jpg" alt="">
+        </span>
+      <h1>
+          This is <strong>Visualize</strong>, a responsive site template designed by <a href="http://templated.co">TEMPLATED</a><br>
+						and released for free under the Creative Commons License.
+        </h1>
+      <ul class="icons">
+        <li><a href="#" class="icon-twitter"><span class="label">Twitter</span></a></li>
+        <li><a href="#" class="icon-facebook"><span class="label">Facebook</span></a></li>
+        <li><a href="#" class="icon-instagram"><span class="label">Instagram</span></a></li>
+      </ul>
+    </header>
+    <main id="main">
+      <section class="thumbnails">
+        <div>
+          <a href="#">
+            <img src="images/thumbs/01.jpg">
+            <h3>Lorem ipsum dolor sit.</h3>
+          </a>
+          <a href="#">
+            <img src="images/thumbs/02.jpg">
+            <h3>Lorem ipsum dolor sit.</h3>
+          </a>
+        </div>
+        <div>
+          <a href="#">
+            <img src="images/thumbs/03.jpg">
+            <h3>Lorem ipsum dolor sit.</h3>
+          </a>
+          <a href="#">
+            <img src="images/thumbs/04.jpg">
+            <h3>Lorem ipsum dolor sit.</h3>
+          </a>
+        </div>
+        <div>
+          <a href="#">
+            <img src="images/thumbs/05.jpg">
+            <h3>Lorem ipsum dolor sit.</h3>
+          </a>
+          <a href="#">
+            <img src="images/thumbs/06.jpg">
+            <h3>Lorem ipsum dolor sit.</h3>
+          </a>
+        </div>
+      </section>
+    </main>
+    <footer id="footer">
+      <p>© Untitled. All rights reserved. Design: <a href="http://templated.co">TEMPLATED</a>. Demo Images: <a href="http://unsplash.com">Unsplash</a>.</p>
+    </footer>
+  </div>
+</body>
+
+</html>
